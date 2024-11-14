@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+
+
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 85px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 0.6s ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.sub-menu {
+    display: none;
+    top: 6%;
+    position: relative;
+}
+
+.sub-menu ul {
+    position: absolute;
+
+}
+
+.main ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 45, 117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul {
+    display: block;
+    margin: 6px;
+
+}
+
+.main ul li:hover .sub-menu ul li {
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px#fff;
+    background: transparent;
+    transition: 0.4s ease;
+    text-align: left;
+    border-radius: 0;
+
+}
+
+.main ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 72%;
+    top: 0%;
+
+    width: 28%;
+    height: 28%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  /*  border: solid 2px red;*/
+}
+
+.modal-content {
+    background: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 600px;
+    /*border: solid 2px blue;*/
+}
+
+.close {
+
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
+
+table,
+th,
+td {
+    margin-top: 25px;
+    width: 100%;
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.valor {
+    display: block;
+    width: 100%;
+}
+
+/*estilos responsivos de la ventana modal*/
+@media screen and (max-width:992px) {
+    .modal {
+        left: 60%;
+        width: 40%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .modal {
+        left: 50%;
+        width: 50%;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .modal {
+        left: 35%;
+        width: 66%;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width:455px) {
+    .modal {
+        left: 0;
+        width: 100%;
+        height: 35%;
+    }
+}

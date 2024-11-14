@@ -1,0 +1,64 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color:black;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 22px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background-image: linear-gradient(180deg, #009de6 0, #009ae9 8.33%, #0097eb 16.67%, #3193ec 25%, #568feb 33.33%, #708be8 41.67%, #8686e3 50%, #9981dd 58.33%, #a97cd5 66.67%, #b777cd 75%, #c372c3 83.33%, #cd6eb8 91.67%, #d66aad 100%);
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+ 
+ .logo{
+  float:left;
+  padding: 0px 15px;
+  height: 80px;
+ }
+
+ .float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+
+<body>

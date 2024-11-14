@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>LA FREGONA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font.css.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="part.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/styl.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="icon" href="logos.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <div id="particles-js"></div>
+
+
+</head>
+
+<br>
+
+<body>
+    <header>
+        <div class="main">
+        <div class="logo"> 
+            <img src="Logo2.png">
+        </div>
+        
+        <!--MENÚ PRINCIPAL HOME CATEGORIAS -->
+         <ul>
+         <li class="active" style="font-size:30px"><a href="index.html" class="fa fa-home">Inicio</a></li>
+         <li style="font-size:30px"><a href="Contacto/Contacto.html" class="fa fa-whatsapp">Contactos</a></li>
+        
+         
+        
+             </ul>
+            </div>
+         </li>
+        </ul>
+
+         
+            </header>
+
+
+    <div class="centro">
+
+
+        <div id="modal" class="modal">
+            <div class="modal-content" id="contenido">
+                <span class="close" id="cerrar">&times;</span>
+                <table class="tabla" id="tabla">
+                    <tr class="fila">
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                       
+                    </tr>
+
+                    <!-- <div class="fila" id="fila_nueva"></div>-->
+
+
+                </table>
+                <button  style="background-color: #90EE90; color: white; font-size: 22px;" type="button" id="vaciar" class="fa fa-trash">Vaciar Carrito</button>
+                <button  style="background-color: #DC143C; color: white; font-size: 22px;" type="button" id="imprimir" class="fa fa-file-pdf-o">Imprimir Ticket</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="wrap" style="overflow: hidden;">
+
+            <center>
+                <font color="white">
+                    <h2 class="titulo">ELIGE UN PRODUCTO</h2>
+            </center>
+            </font>
+            <br>
+
+            <div class="store-wrapper">
+                <div class="category_list">
+                    <a href="#" class="category_item" category="all">Todo</a>
+                    <a href="#" class="category_item" category="Atomizador">Atomizador</a>
+                    <a href="#" class="category_item" category="Cubetas">Cubetas</a>
+                    <a href="#" class="category_item" category="Botes">Botes</a>
+                    <a href="#" class="category_item" category="Cepillo">Cepillo</a>
+                    <a href="#" class="category_item" category="Jabon">Jabon</a>
+                    <a href="#" class="category_item" category="Ácido">Ácido</a>
+                    <a href="Contacto/Contacto.html" class="category_item" category="">Contactos</a>
+                </div>
+                <section class="products-list">
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Atomizador de 1L Industrial.jpeg" alt="">
+                        <a href="#">Atomizador de 1L 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=3 COLOR="greend">$29.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="29.00" titulo="Atomizador de 1L" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/DetallesAtomizador1L.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Atomizador de 1L.jpg" alt="">
+                        <a href="#">Atomizador de 1L 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=3 COLOR="greend">$24.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="24.00" titulo="Atomizador de 1L" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="#" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Atomizador de 500 normal.png" alt="">
+                        <a href="#">Atomizador de 500ml 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=3 COLOR="greend">$19.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="19.00" titulo="Atomizador de 500" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/DetallesAtomizadorde500.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Atomizador de 250 normal.jpeg" alt="">
+                        <a href="#">Atomizador de 250ml 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=3 COLOR="greend">$9.50</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.50" titulo="Atomizador de 250" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Atomizador de 500 Gusano.jpeg" alt="">
+                        <a href="#">Atomizador de 500ml Gusano 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=3 COLOR="greend">$18.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="18.00" titulo="Atomizador de 500 Gusano" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Atomizador de 250 Gusano.gif" alt="">
+                        <a href="#">Atomizador de 250ml Gusano 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$9.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.00" titulo="Atomizador de 250 Gusano" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Atomizador de 250 bola.jpg" alt="">
+                        <a href="#">Atomizador de 250ml bola 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$15.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="15.00" titulo="Atomizador de 250 bola" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Dosificador 500 ml.jpg" alt="">
+                        <a href="#">Atomizador de 500ml Dosificador 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$26.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="26.00" titulo="Atomizador de 500 ml Dosificador" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Dosificador 250 ml.jpg" alt="">
+                        <a href="#">Atomizador de 250ml Dosificador 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$18.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="18.00" titulo="Atomizador de 250 ml Dosificador" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Dosificador 500 ml.jpg" alt="">
+                        <a href="#">Envase Perfumero 500ml 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$26.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="26.00" titulo="Atomizador de 500 ml Dosificador" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+
+                    <div class="product-item" category="Atomizador">
+                        <img src="imagenes/Dosificador 250 ml.jpg" alt="">
+                        <a href="#">Envase Perfumero 250ml 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$18.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="18.00" titulo="Atomizador de 250 ml Dosificador" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/Cubetaflexible8.jpeg" alt="">
+                        <a href="#">Cubeta flexible #8 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$24.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="24.00" titulo="Cubeta flexible #8" role="button"><i class="fa fa-shopping-cart"></i>Agregar<a>
+                                <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/Cubetaflexible10.jpeg" alt="">
+                        <a href="#">Cubeta flexible #10 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$37.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="37.00" titulo="Cubeta flexible #10" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/Cubetaflexible14.jpeg" alt="">
+                        <a href="#">Cubeta flexible #14 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$49.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="49.00" titulo="Cubeta flexible #14" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/Cubetaflexible16.jpeg" alt="">
+                        <a href="#">Cubeta flexible #16 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$56.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="56.00" titulo="Cubeta flexible #16" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/Cubetaflexible18.jpeg" alt="">
+                        <a href="#">Cubeta flexible #18 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$63.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="63.00" titulo="Cubeta flexible #18" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/CubetaPico.jpg" alt="">
+                        <a href="#">Cubeta Con Pico 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$26.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="26.00" titulo="Cubeta Con Pico" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/CubetaGalvanizada10.jpg" alt="">
+                        <a href="#">Cubeta Galvanizada #10 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$76.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="76.00" titulo="Cubeta Galvanizada #10" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/CubetaTejida.jpg" alt="">
+                        <a href="#">Cubeta Tejida 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$35.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="35.00" titulo="Cubeta Tejida" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/CubetaEconomica.jpg" alt="">
+                        <a href="#">Cubeta Economica 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$25.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="25.00" titulo="Cubeta Economica" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/CubetaInfantil.jpg" alt="">
+                        <a href="#">Cubeta Infantil 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$15.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="15.00" titulo="Cubeta Infantil" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/CubetaHuevera.jpg" alt="">
+                        <a href="#">Cubeta Huevera 3L 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$29.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="29.00" titulo="Cubeta Huevera 3 Litros" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cubetas">
+                        <img src="imagenes/CubetaLechera.png" alt="">
+                        <a href="#">Cubeta lechera 5L 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$39.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="39.00" titulo="Cubeta Lechera 5 Litros" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote balancin alica.jpeg" alt="">
+                        <a href="#">Bote balancin alica 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$59.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="59.00" titulo="Bote balancin alica" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote balancin beverly hills grande.jpeg" alt="">
+                        <a href="#">Bote balancin beverly hills grande 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$104.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="104.00" titulo="Bote balancin beverly hills grande" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote balancin beverly hills mediano.jpeg" alt="">
+                        <a href="#">Bote balancin beverly hills mediano 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$69.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="69.00" titulo="Bote balancin beverly hills mediano" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote balancin Caprichoso chico 2.jpeg" alt="">
+                        <a href="#">Bote balancin Caprichoso chico #2 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$42.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="42.00" titulo="Bote balancin caprichoso chico #2" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote balancin Caprichoso Grande 3.jpeg" alt="">
+                        <a href="#">Bote balancin Caprichoso Grande #3 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$77.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="77.00" titulo="Bote balancin Caprichoso Grande #3" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote Balancin Carrasco Mediano.jpeg" alt="">
+                        <a href="#">Bote Balancin Mediano 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$76.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="76.00" titulo="Bote Balancin Carrasco Mediano" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote de pedal grande la ardilla.jpeg" alt="">
+                        <a href="#">Bote de pedal grande 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$178.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="178.00" titulo="Bote de pedal grande la ardilla" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote Mexicano Chico.jpeg" alt="">
+                        <a href="#">Bote Mexicano Chico 28L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$52.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="52.00" titulo="Bote Mexicano Chico 28 litros" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote Mexicano Grande.jpeg" alt="">
+                        <a href="#">Bote Mexicano Grande 88L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$115.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="115.00" titulo="Bote Mexicano Grande 88 litros" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Botes">
+                        <img src="imagenes/Bote Jumbo 100 litros.jpeg" alt="">
+                        <a href="#">Bote Jumbo 100 Litros</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$140.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="140.00" titulo="Bote Jumbo 100 litros" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/A-160.jpg" alt="">
+                        <a href="#">Cepillo Escoba Perico A-160 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$35.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="35.00" titulo="Cepillo Perico A-160" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/EscobaFlorentina.jpg" alt="">
+                        <a href="#">Cepillo Escoba Florentina 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$40.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="40.00" titulo="Cepillo Perico A-160" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/CepilloCl.jpg" alt="">
+                        <a href="#">Cepillo Perico para piso 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$36.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="36.00" titulo="Cepillo Perico para piso" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/P-140.jpg" alt="">
+                        <a href="#">Escoba Perico P-140 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$36.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="36.00" titulo="Escoba Perico P-140" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/P-250.jpg" alt="">
+                        <a href="#">Escoba perico P-250 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$40.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="40.00" titulo="Escoba perico P-250" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/Lava coches.jpg" alt="">
+                        <a href="#">Escoba Perico 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$43.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="43.00" titulo="Escoba Perico Lava coches" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/Escoba alteza a-100.jpg" alt="">
+                        <a href="#">Escoba alteza alta 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$38.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="38.00" titulo="Escoba alteza alta" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/Escoba Ecologica.jpg" alt="">
+                        <a href="#">Escoba Ecologica 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$24.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="24.00" titulo="Escoba Ecologica" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Cepillo">
+                        <img src="imagenes/Escoba hechicera chica.jpg" alt="">
+                        <a href="#">Escoba Hechicera 1Pza</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$30.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="30.00" titulo="Escoba Hechicera chica" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Persil.jpg" alt="">
+                        <a href="#">Jabon Tipo Persil 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Persil 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Color.jpg" alt="">
+                        <a href="#">Jabon Tipo Mas Color 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Mas Color 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Negrura.jpg" alt="">
+                        <a href="#">Jabon Tipo Mas Negrura 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Mas Negrura 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Blancura.jpg" alt="">
+                        <a href="#">Jabon Tipo Más Blancura 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Mas Blancura 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Ariel.jpg" alt="">
+                        <a href="#">Jabon Tipo Ariel 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Ariel 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Vel rosita.jpg" alt="">
+                        <a href="#">Jabon Tipo Vel Rosita 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Vel Rosita 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Blancura.jpg" alt="">
+                        <a href="#">Jabon Tipo Zote Blanco 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Zote Blanco 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Limon.jpg" alt="">
+                        <a href="#">Jabon Tipo Axion Limon 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$14.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="14.00" titulo="Jabon Tipo Axion Limon 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Lavanda.jpeg" alt="">
+                        <a href="#">Lavanda 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$9.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.00" titulo="Lavanda 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Canela.jpeg" alt="">
+                        <a href="#">Canela 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$9.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.00" titulo="Canela 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Limon.jpeg" alt="">
+                        <a href="#">Limon 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$9.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.00" titulo="Limon 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Citricos.jpeg" alt="">
+                        <a href="#">Pasion de Frutas 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$9.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.00" titulo="Citricos 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Frutas.jpeg" alt="">
+                        <a href="#">Pasion de Frutas 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$9.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.00" titulo="Pasion de Frutas 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Mar.jpeg" alt="">
+                        <a href="#">Mar Fresco 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$9.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="9.00" titulo="Mar Fresco 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Pino.jpeg" alt="">
+                        <a href="#">Pino Verde 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$10.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="10.00" titulo="Pino Verde 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Jabon">
+                        <img src="imagenes/Desinfectante.jpeg" alt="">
+                        <a href="#">Desinfectante 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$16.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="16.00" titulo="Desinfectante 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Ácido">
+                        <img src="imagenes/Acido Muriatico.jpg" alt="">
+                        <a href="#">Lauril Eter Sulfato De Sodio 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$10.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="19.00" titulo="Lauril Eter Sulfato De Sodio 1 litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product-item" category="Ácido">
+                        <img src="imagenes/Amoniaco.jpg" alt="">
+                        <a href="#">Hipoclorito de Sodio 1L</a>
+                        <a href="#">
+                            <FONT SIZE=2 COLOR="greend">$7.00</FONT>
+                            <FONT SIZE=4></FONT>
+                        </a>
+                        <a href="#" class="btn btn-default producto" precio="7.00" titulo="Hipoclorito de Sodio 1 Litro" role="button"><i class="fa fa-shopping-cart"></i>Agregar</a>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <footer id="pie" class="col-md-12">
+    </footer>
+
+    </section>
+    </div>
+    </div>
+   
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=5586847533&text=Hola, Me gustaría más información sobre los productos disponibles." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    </header>
+
+    <!--    <script src="https://unpkg.com/pdfmake/build/pdfmake.min.js"></script>
+    <script src="https://unpkg.com/pdfmake/build/vfs_fonts.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+ <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>-->
+    <script src="js/main2.js"></script>
+
+
+
+
+
+</body>
+
+</html>

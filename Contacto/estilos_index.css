@@ -1,0 +1,42 @@
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color:white;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 22px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background-color: #DFA5FC;
+}
+
+.active {
+  background-color: pink;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+ 
+ .logo{
+  float:left;
+  padding: 0px 10px;
+  height: 80px;
+  
+ }
+
+
+<body>

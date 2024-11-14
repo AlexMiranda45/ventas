@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La Fregona</title>
+	<link rel="stylesheet" type="text/css" href="detalles/styl.css">
+<link rel="stylesheet" type="text/css" href="detalles/estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="DETALLES_Dino.css">
+  <link rel="stylesheet" href="css/styles.css">  
+
+</head>
+<body>
+	<header>
+		<div class="main">
+		<div class="logo"> 
+			<img src="Logo2.png">
+		</div>
+		
+		<!--MENÚ PRINCIPAL HOME CATEGORIAS -->
+		 <ul>
+		 <li class="active" style="font-size:30px"><a href="index.html"><i class="fa fa-home"></i>Inicio</a></li>
+		 <li style="font-size:30px"><a href="productos.html"><i class="">Catálogo</a></li>
+		 <li style="font-size:30px"><a href="#"><i class="">Contactos</a></li>
+		
+		 
+		
+		 	 </ul>
+		 	</div>
+		 </li>
+		</ul>
+
+		 
+		 	</header>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=5563427299&text=Hola, Me gustaría más información sobre la mascarilla facial BOEN. ¡¡¡Cuentas con disponibilidad!!!." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+
+ <script>
+var current = 0;
+var imagenes = new Array();
+
+$(document).ready(function() {
+    var numImages = 6;
+    if (numImages <= 3) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+   
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+        
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    });
+
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+        
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    }); 
+ });
+</script>
+
+
+
+
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="imagenes/Atomizador de 1L Industrial.jpeg" width="300" height="300" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="imagenes/Atomizador de 1L Industrial.jpeg" onclick="img('imagenes/Atomizador de 1L Industrial.jpeg')">
+         
+         
+
+         
+        </div>
+      </div>
+      <div class="right">
+        <h3>Atomizador industrial de 1L</h3>
+        <h4> <small>$</small>29.00 </h4>
+        <p><FONT COLOR="black">Precio por mayoreo y menudeo, bultos de 100 pz en adelante. Execelente atomizador para dispersar distintos líquidos y/o gel antibacterial</p>
+        
+        <h5>Colores Disponibles.</h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          
+                   
+        </div>
+
+        <button><a href="productos.html" style="font-size: 15px; color: black;">Realiza tú pedido</button>
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+   <div class="row">
+        <div style="carrusel: center;" id="content" class="col-lg-12">
+            <div id="carrusel">
+                <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+                <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+                <div class="carrusel">
+                    <div class="product" id="product_0">
+                        <img src="imagenes/Atomizador de 1L.jpg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Atomizador de 1L</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$24.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detallesAtomizadorde1L.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_1">
+                        <a href="DetallesAtomizadorde500.html">
+                        <img src="imagenes/Atomizador de 500 normal.png" alt="Descripción de la imagen" width="195" height="100" />
+                        </a>
+                        <h5><FONT SIZE=4 COLOR="#000103">Atomizador de 500 normal</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$19.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_2">
+                        <img src="imagenes/Atomizador de 250 normal.jpeg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Atomizador de 250 normal</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$9.50</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_3">
+                        <img src="imagenes/Cubetaflexible10.jpeg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Cubeta flexible #10</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$37.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_4">
+                        <img src="imagenes/Cubetaflexible14.jpeg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Cubeta flexible #14</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$49.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_5">
+                        <img src="imagenes/Bote balancin beverly hills grande.jpeg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Bote balancin beverly hills grande</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$104.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_6">
+                        <img src="imagenes/Bote balancin Caprichoso chico 2.jpeg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Bote balancin Caprichoso chico #2</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$42.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_6">
+                        <img src="imagenes/A-160.jpg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Cepillo Escoba Perico A-160</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$35.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                    <div class="product" id="product_6">
+                        <img src="imagenes/EscobaFlorentina.jpg" width="195" height="100" />
+                        <h5><FONT SIZE=4 COLOR="#000103">Cepillo Escoba Florentina</FONT><FONT SIZE=4></FONT></h5>
+                        <p><FONT SIZE=4 COLOR="#000103">$40.00</FONT><FONT SIZE=4></FONT></p>
+                        <a href="detalles/detalle1.html" role="button">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Bloque de anuncios adaptable -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6676636635558550"
+                 data-ad-slot="8523024962"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+
+
+
+</body>
+</html>
